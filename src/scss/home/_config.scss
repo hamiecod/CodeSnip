@@ -1,0 +1,51 @@
+// CSS Reset 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// variables
+$main: #f5ebde;
+$secondary: #3b2b24;
+
+// keymaps
+$font-weights:(
+    "regular": 400,
+    "medium": 600,
+    "bold": 800
+);
+$font-sizes:(
+    "small": 0.8rem,
+    "medium": 1.75rem,
+    "large": 3.3rem
+);
+
+// mixins
+@mixin abs {
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+}
+
+// for font weights
+@mixin regular{
+    font-weight: map-get($font-weights, regular);
+}
+@mixin semi{
+    font-weight: map-get($font-weights, medium);
+}
+@mixin bold{
+    font-weight: map-get($font-weights, bold);
+}
+
+// for font sizes
+@mixin small{
+    font-size: map-get($font-sizes, small);
+}
+@mixin medium{
+    font-size: map-get($font-sizes, medium);
+}
+@mixin large{
+    font-size: map-get($font-sizes, large);
+}

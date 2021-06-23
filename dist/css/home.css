@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+  background: #f5ebde;
+}
+
+header {
+  position: absolute;
+  top: 0vh;
+  left: 0vh;
+  width: 100vw;
+  height: 12vh;
+  background: #3b2b24;
+}
+
+header .nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr 1.4fr;
+      grid-template-columns: 1fr 4fr 1.4fr;
+  height: 100%;
+}
+
+header .nav-write {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  text-decoration: none;
+}
+
+header .nav-write__button {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+header .nav-write__button-icon {
+  font-size: 1.5rem;
+  color: #f5ebde;
+}
+
+header .nav-write__text {
+  color: #f5ebde;
+  margin: 0rem 0.5rem;
+  font-weight: 600;
+}
+
+header .nav-list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-list__item {
+  list-style: none;
+  margin: 0.8rem;
+}
+
+header .nav-list__item-link {
+  color: #f5ebde;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header .nav-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header .nav-search__field {
+  margin: 0.1rem;
+  font-family: inherit;
+  padding: 0.35rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+}
+
+header .nav-search__button {
+  font-family: inherit;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .nav-search__button-icon {
+  color: #f5ebde;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=home.css.map */

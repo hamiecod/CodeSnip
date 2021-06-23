@@ -1,0 +1,8 @@
+@import './fonts', './config';
+
+body{
+    font-family: 'Open Sans';
+    background: $main;
+}
+
+@import './header';
