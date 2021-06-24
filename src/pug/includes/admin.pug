@@ -1,10 +1,14 @@
-.container.hidden
+.background
+.container
     section.write
-        h2.write-title Compose your snippet
+        .write-header
+            button.write-header__back
+                i.write-header__back-icon.fa.fa-chevron-left
+            h2.write-header__title Compose your snippet
         form.write-form(onsubmit="return false;")
-            input.write-form__input.write-form__heading(type="text", name="heading", placeholder="Write the heading")
-            input.write-form__input.write-form__description(type="text", name="description", placeholder="Write the description")
-            input.write-form__input.write-form__description(type="text", name="language", placeholder="Write the language name")
-            textarea.write-form__input.write-form__snippet(type="text", name="snippet", cols=30, rows=9, placeholder="Paste the code")
+            input.write-form__input.write-form__heading(type="text", name="heading", placeholder="Write the heading", autocomplete="off")
+            input.write-form__input.write-form__description(type="text", name="description", placeholder="Write the description", autocomplete="off")
+            input.write-form__input.write-form__language(type="text", name="language", placeholder="Write the language name", autocomplete="off")
+            textarea.write-form__input.write-form__snippet(type="text", name="snippet", cols=30, rows=9, placeholder="Paste the code", autocomplete="off")
             button.write-form__button Add Snippet
         p.write-confirmation.hidden Snippet Added ✔

@@ -1,4 +1,4 @@
-body::before{
+.background{
     content: "";
     position: absolute;
     width: 100vw;
@@ -29,11 +29,26 @@ body::before{
         display: flex;
         flex-direction: column;
         align-items: center;
-        &-title{
-            color: $main;
+        &-header{
+            display: flex;
             width: 100%;
-            text-align: center;
-            font-size: 2rem;
+            flex-direction: row;
+            &__back{
+                background: transparent;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                &-icon{
+                    color: $main;
+                    font-size: 1.78rem;
+                }
+            }
+            &__title{
+                color: $main;
+                width: 100%;
+                text-align: center;
+                font-size: 2rem;
+            }
         }
         &-form{
             display: flex;

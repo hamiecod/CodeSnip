@@ -194,7 +194,7 @@ header .nav-search__button-icon {
   font-size: 0.81rem !important;
 }
 
-body::before {
+.background {
   content: "";
   position: absolute;
   width: 100vw;
@@ -242,7 +242,30 @@ body::before {
           align-items: center;
 }
 
-.container .write-title {
+.container .write-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .write-header__back {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container .write-header__back-icon {
+  color: #f5ebde;
+  font-size: 1.78rem;
+}
+
+.container .write-header__title {
   color: #f5ebde;
   width: 100%;
   text-align: center;
