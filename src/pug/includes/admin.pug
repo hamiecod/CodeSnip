@@ -1,0 +1,10 @@
+.container.hidden
+    section.write
+        h2.write-title Compose your snippet
+        form.write-form(onsubmit="return false;")
+            input.write-form__input.write-form__heading(type="text", name="heading", placeholder="Write the heading")
+            input.write-form__input.write-form__description(type="text", name="description", placeholder="Write the description")
+            input.write-form__input.write-form__description(type="text", name="language", placeholder="Write the language name")
+            textarea.write-form__input.write-form__snippet(type="text", name="snippet", cols=30, rows=9, placeholder="Paste the code")
+            button.write-form__button Add Snippet
+        p.write-confirmation.hidden Snippet Added ✔

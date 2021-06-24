@@ -31,14 +31,14 @@
                     }
                     .toolbar{
                         &-item{
-                            margin: 0rem 0.2rem;
+                            margin: 0rem 0.2rem !important;
                         }
                         button{
-                            cursor: pointer;
+                            cursor: pointer !important;
                             span{
-                                box-shadow: none;
-                                background: transparent;
-                                font-size: 0.81rem;
+                                box-shadow: none !important;
+                                background: transparent !important;
+                                font-size: 0.81rem !important;
                             }
                         }
                     }

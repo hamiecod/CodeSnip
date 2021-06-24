@@ -1,0 +1,77 @@
+body::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: 0.85;
+    z-index: 2;
+}
+
+.container{
+    position: absolute;
+    z-index: 3;
+    top: 0vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .write{
+        z-index: 3;
+        position: absolute;
+        background: $secondary;
+        height: 80vh;
+        width: 60vw;
+        border-radius: 0.5rem;
+        border: 0.25rem solid $main;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            color: $main;
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+        }
+        &-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin-top: 1.3rem;
+            &__input{
+                font-family: inherit;
+                outline: none;
+                border: none;
+                margin: 0.46rem 0rem;
+                color: $secondary;
+                background: $main;
+                padding: 0.3rem 0.5rem;
+                border-radius: 0.2rem;
+                font-size: 0.9rem;
+                resize: none;
+                width: 100%;
+            }
+            &__button{
+                font-family: inherit;
+                background: $main;
+                color: $secondary;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                margin-top: 0.7rem;
+                padding: 0.3rem;
+                width: 20%;
+                @include bold;
+                border-radius: 0.4rem;
+            }
+        }
+        &-confirmation{
+            color: $main;
+            font-size: 0.88rem;
+            margin-top: 0.25rem;
+        }
+    }
+}

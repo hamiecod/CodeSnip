@@ -1,4 +1,4 @@
-@import './fonts', './config';
+@import './fonts', './config', './utility';
 
 body{
     font-family: 'Open Sans';
@@ -7,4 +7,4 @@ body{
 
 @import './header';
 
-@import './content';
+@import './content', './admin';

@@ -51,5 +51,18 @@
         </li>
       </ul>
     </section>
+    <div class="container hidden">
+      <section class="write">
+        <h2 class="write-title">Compose your snippet</h2>
+        <form class="write-form" onsubmit="return false;">
+          <input class="write-form__input write-form__heading" type="text" name="heading" placeholder="Write the heading">
+          <input class="write-form__input write-form__description" type="text" name="description" placeholder="Write the description">
+          <input class="write-form__input write-form__description" type="text" name="language" placeholder="Write the language name">
+          <textarea class="write-form__input write-form__snippet" type="text" name="snippet" cols="30" rows="9" placeholder="Paste the code"></textarea>
+          <button class="write-form__button">Add Snippet</button>
+        </form>
+        <p class="write-confirmation hidden">Snippet Added ✔</p>
+      </section>
+    </div>
   </body>
 </html>
