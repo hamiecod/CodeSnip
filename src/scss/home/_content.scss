@@ -1,0 +1,49 @@
+.content{
+    position: absolute;
+    top: 12vh;
+    width: 100vw;
+    padding: 2rem 9rem;
+    &-list{
+        display: flex;
+        flex-direction: column;
+        &__item{
+            list-style: none;
+            padding: 1rem 0.4rem;
+            .snippet{
+                &-info{
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 0.67rem;
+                    &__heading{
+                        margin: 0rem 0.8rem;
+                        font-size: 1.4rem;
+                    }
+                    &__description{
+                        padding-top: 0.36rem;
+                    }
+                }
+                &-code{
+                    &__container{
+                        border-radius: 0.8rem;
+                        &-code{
+
+                        }
+                    }
+                    .toolbar{
+                        &-item{
+                            margin: 0rem 0.2rem;
+                        }
+                        button{
+                            cursor: pointer;
+                            span{
+                                box-shadow: none;
+                                background: transparent;
+                                font-size: 0.81rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

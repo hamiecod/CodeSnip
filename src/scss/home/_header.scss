@@ -43,6 +43,9 @@ header{
                     @include medium;
                     @include semi;
                     text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }

@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Snip</title>
     <script src="https://kit.fontawesome.com/9031ae7b04.js" crossorigin="anonymous" defer></script>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/css/home.css">
     <script src="#"></script>
+    <script src="/lib/prismjs/prism.js" defer></script>
+    <link rel="stylesheet" href="/lib/prismjs/prism.css">
   </head>
   <body>
     <header>
@@ -25,5 +27,29 @@
         </div>
       </nav>
     </header>
+    <section class="content"> 
+      <ul class="content-list"> 
+        <li class="content-list__item">
+          <article class="snippet"> 
+            <div class="snippet-info"> 
+              <h3 class="snippet-info__heading">HTML boilerplate</h3><span class="snippet-info__description">This is HTML boilerplate</span>
+            </div>
+            <div class="snippet-code">
+              <pre class="snippet-code__container language-js"><code class="snippet-code__container-code">var i = 43;</code></pre>
+            </div>
+          </article>
+        </li>
+        <li class="content-list__item">
+          <article class="snippet"> 
+            <div class="snippet-info"> 
+              <h3 class="snippet-info__heading">Javascript Bolierplate</h3><span class="snippet-info__description">This is javascript boilerplate</span>
+            </div>
+            <div class="snippet-code">
+              <pre class="snippet-code__container language-js"><code class="snippet-code__container-code">var i = 43;</code></pre>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
